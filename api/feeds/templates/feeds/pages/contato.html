@@ -1,0 +1,33 @@
+{% extends 'feeds/base.html' %}
+
+{% block nome_page %} Contato {% endblock nome_page %}
+
+{% block title %}
+    Contato
+{% endblock title %}
+
+{% block content %}
+    <div class="contact_content">
+        <h3>Entre em contato com a gente</h3>
+
+        <form action="">
+            <div class="group_input">
+                <label for="seu_nome">Digite seu nome:</label>
+                <input type="text" name="seu_nome" id="seu_nome" placeholder="Digite seu nome...">
+            </div>
+
+            <div class="group_input">
+                <label for="seu_contato">Digite seu contato:</label>
+                <input type="text" name="seu_contato" id="seu_contato" placeholder="Digite seu contato...">
+            </div>
+
+            <div class="group_input">
+                <label for="sua_mensagem">Digite sua mensagem:</label>
+                <textarea name="sua_mensagem" id="sua_mensagem" cols="30" rows="10" placeholder="Digite a mensagem desejada..."></textarea>
+            </div>
+
+            
+            <button class="btn success">Enviar</button>
+        </form>
+    </div>
+{% endblock content %}

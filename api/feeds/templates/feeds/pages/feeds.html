@@ -1,0 +1,24 @@
+{% extends 'feeds/base.html' %}
+
+{% block nome_page %} Home {% endblock nome_page %}
+
+{% block title %}
+    Feeds
+{% endblock title %}
+
+{% block content %}
+    {% for feed in feeds %}
+        <div class="feed">
+            <span class="feed_title">{{ feed.title }}</span>
+
+            <div class="feed_content">
+               {{ feed.content }}
+            </div>
+
+            <div class="feed_action">
+                <button class="btn success">Gostei</button>
+                <button class="btn error">Não gostei</button>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock content %}

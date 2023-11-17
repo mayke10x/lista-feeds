@@ -1,0 +1,6 @@
+api/venv/
+api/db.sqlite3
+api/feeds/migrations/
+
+feeds/node_modules
+feeds/package-lock.json
